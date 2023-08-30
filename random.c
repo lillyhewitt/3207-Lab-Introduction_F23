@@ -5,6 +5,10 @@
 //function randchar() is a character function that returns a random character from ‘A’ – ‘Z’. 
 //The character is used in the main program to generate a random 7 letter word
 char randchar() {
-    // returns 'a' char just to make sure function is working
-    return 'a';
+    // creates variable to save random character to 
+    char randomChar;
+    // use ASCII values to grab random character between A (65) - Z (90)
+    randomChar = (rand() % (90 - 65)) + 65;
+    // return char
+    return randomChar;
 }
